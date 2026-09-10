@@ -3,27 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kerry S. O'Brien | Professor of Behavioural Sciences, Monash University</title>
-<meta name="description" content="Kerry S. O'Brien is Professor of Behavioural Sciences at Monash University. Research on weight stigma, alcohol and gambling marketing, prejudice and extremism, health behaviour, and psychometrics.">
+<title>Kerry O'Brien | Professor of Behavioural Sciences, Monash University</title>
+<meta name="description" content="Kerry O'Brien is Professor of Behavioural Sciences at Monash University. Research on weight stigma, alcohol and gambling marketing, prejudice and extremism, health behaviour, and psychometrics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#F2F3F0;
-  --card:#FBFBF9;
+  --paper:#FBF7F1;
+  --tone-rail:#E7EFE9;
+  --card:#FFFDFA;
   --ink:#17201D;
   --ink-soft:#56605C;
   --teal:#0D5B52;
   --teal-deep:#093F39;
-  --sand:#DCD3C3;
+  --sand:#E2DACB;
+  --sand-rail:#CBDAD0;
   --mustard:#D9A21B;
   --serif:'Newsreader',Georgia,'Times New Roman',serif;
   --sans:'Karla','Helvetica Neue',Arial,sans-serif;
   --rail:19rem;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;overflow-x:hidden}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
   font-size:1.0625rem;line-height:1.62;font-variant-numeric:oldstyle-nums;}
 a{color:var(--teal);text-decoration:none;border-bottom:1px solid rgba(13,91,82,.28)}
@@ -35,9 +37,11 @@ h1,h2,h3{font-weight:400;margin:0}
 .shell{display:block;max-width:78rem;margin:0 auto;padding:0 1.5rem}
 @media(min-width:60rem){.shell{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);gap:4.5rem;padding:0 3rem}}
 
-.rail{padding:2.25rem 0 1rem}
+.rail{padding:2.25rem 0 1.75rem;background:var(--tone-rail);
+  box-shadow:-50vw 0 0 var(--tone-rail),50vw 0 0 var(--tone-rail)}
 @media(min-width:60rem){.rail{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;
-  padding:3.25rem 0 2rem;border-right:1px solid var(--sand);margin-right:-2.25rem;padding-right:2.25rem}}
+  padding:3.25rem 0 2rem;border-right:1px solid var(--sand-rail);margin-right:-2.25rem;padding-right:2.25rem;
+  box-shadow:-50vw 0 0 var(--tone-rail)}}
 .mark{display:inline-flex;align-items:baseline;gap:.1rem;font-family:var(--serif);font-size:1.5rem;
   letter-spacing:.02em;color:var(--teal);border:0}
 .mark span:last-child{color:var(--mustard)}
@@ -133,6 +137,10 @@ h3{font-family:var(--serif);font-size:1.175rem;margin:0 0 .35rem}
 .pub .doi{font-family:var(--sans);font-size:.78rem;overflow-wrap:anywhere}
 
 .names{font-family:var(--sans);font-size:.95rem;line-height:1.9;color:var(--ink-soft)}
+.areas{list-style:none;margin:1rem 0 0;padding:0;column-gap:2.5rem}
+@media(min-width:38rem){.areas{columns:2}}
+.areas li{break-inside:avoid;padding:.32rem 0 .32rem 1rem;position:relative;font-size:1rem;line-height:1.45}
+.areas li::before{content:"";position:absolute;left:0;top:.85em;width:.4rem;height:2px;background:var(--sand-rail)}
 
 .dl{margin:1.25rem 0 0;display:grid;grid-template-columns:1fr}
 @media(min-width:38rem){.dl{grid-template-columns:9rem 1fr}}
@@ -153,7 +161,7 @@ footer.page-end{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--s
 
   <header class="rail">
     <a class="mark" href="#welcome" aria-label="Home"><span>K</span><span>O</span></a>
-    <p class="rail-name">Kerry S. O&rsquo;Brien</p>
+    <p class="rail-name">Kerry O&rsquo;Brien</p>
     <p class="rail-place">Professor of Behavioural Sciences<br>Monash University<br>Melbourne, Australia</p>
     <nav aria-label="Sections">
       <ul>
@@ -167,7 +175,7 @@ footer.page-end{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--s
       </ul>
     </nav>
     <div class="rail-foot">
-      <p>&copy; 2026 Kerry S. O&rsquo;Brien</p>
+      <p>&copy; 2026 Kerry O&rsquo;Brien</p>
       <p>Behavioural Sciences Research Laboratory</p>
     </div>
   </header>
@@ -177,38 +185,40 @@ footer.page-end{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--s
     <!-- ================= WELCOME ================= -->
     <section id="welcome" class="view is-active" aria-labelledby="welcome-h">
       <p class="kicker">Welcome</p>
-      <h1 class="display" id="welcome-h">Kerry S. O&rsquo;Brien</h1>
-      <p class="lede">Professor of Behavioural Sciences at Monash University. I work on stigma, the marketing of alcohol and gambling, prejudice and violent extremism, and the measurement problems that sit underneath all of them.</p>
+      <h1 class="display" id="welcome-h">Kerry O&rsquo;Brien</h1>
+      <p class="lede">Professor of Behavioural Sciences at Monash University. I&rsquo;m trained in Psychology and Public Health and teach and conduct research in the various areas of health and behavioural sciences. I founded and direct the Behavioural Sciences Research Laboratory at Monash University, and was Associate Dean Research in my Faculty (350+ academics) from 2019 to 2025.</p>
 
-      <div class="arc" aria-label="Career path">
-        <div class="arc-line"><i></i><i></i><i></i></div>
-        <div class="arc-stops">
-          <span>Otago<br>PhD, psychology, 2004</span>
-          <span>Wollongong and Manchester<br>2006&ndash;2010</span>
-          <span>Monash<br>2010&ndash;present</span>
-        </div>
-      </div>
+      <p>The focus of my lab, PhD students, and post-docs is on conducting rigorous research that provides practical knowledge and solutions for wider society, including industry partners, government, community organisations and the public. We regularly develop new research measures and methodologies. This includes the development and psychometric testing of new survey scales/measures, covert methods, implicit and explicit measures, and novel experimental approaches.</p>
 
-      <ul class="record">
-        <li><b>130</b><small>peer-reviewed journal articles</small></li>
-        <li><b>53</b><small>h-index, Google Scholar</small></li>
-        <li><b>10,160</b><small>citations</small></li>
-        <li><b>$5.7M</b><small>research funding, AUD</small></li>
-      </ul>
+      <p>More recently, we have been utilising and sometimes validating methods that employ LLMs and AI/Machine learning to study various social and psychological phenomena, and associated behaviour at a population level. I utilise a wide range of research designs and methodologies, including experimental, longitudinal and cross-sectional designs, and a multitude of statistical analysis approaches. Qualitative methodologies and one-on-one and focus group designs are also employed for initial study of new poorly understood issues. This work informs subsequent theoretical development and quantitative research for theory testing and empirical evidence gathering.</p>
+
+      <p>The success of my lab and research has been on the back of a collaborative ethos and culture of supporting PhD students, post-docs, and junior collaborators. This includes extensive mentoring and research training, and priority with regards publication first authorship and co-investigator opportunities on competitive grant applications. My lab has collaborated with over 250 world leading researchers, who broaden our expertise and ability to do a wide array of work on important societal issues.</p>
 
       <h2>What&rsquo;s new</h2>
       <ul class="news">
-        <li><time>2026</time><p>New ARC Linkage Project with Susan Carland, Matteo Vergani and Zarina Vakhitova, tracking Islamophobia and its impacts on Australian Muslims&rsquo; lives.</p></li>
-        <li><time>2026</time><p>Joined the editorial board of <em>BMC Public Health</em>.</p></li>
+        <li><time>2026</time><p>New ARC Linkage Project utilising LLMs and AI to track Islamophobia and its behavioural and psychological impacts on Australian Muslims.</p></li>
         <li><time>2026</time><p>National Industry PhD Program award from the Australian Department of Education.</p></li>
         <li><time>2025</time><p>Faculty of Arts Dean&rsquo;s Award for Excellence in Research Engagement and Impact.</p></li>
         <li><time>2025</time><p>Systematic review for the US Department of Homeland Security on interventions to increase trust in government in democratic contexts.</p></li>
       </ul>
 
-      <h2>What I study</h2>
-      <p>My work asks how stigma and commercial marketing shape health, and what follows for policy. Much of it concerns weight stigma: how explanatory models of obesity move public blame and discrimination, how internalised bias changes eating and physical activity, and whether prejudice-reduction interventions actually work. A second, long-running programme examines alcohol and gambling promotion, particularly sponsorship in sport, children&rsquo;s exposure to it on television, and its relationship to hazardous drinking among sportspeople and students.</p>
-      <p>A third strand concerns prejudice and violent extremism, including Islamophobia in Australia, the psychology of support for extremist views in Indonesia, and homophobic behaviour in youth sport. Across all of it I build and validate measures, and I care more than most about whether an effect survives replication.</p>
-      <p>I founded and direct the Behavioural Sciences Research Laboratory at Monash University, and was Associate Dean Research in the Faculty of Arts from 2019 to 2025.</p>
+      <h2>Areas of research</h2>
+      <ul class="areas">
+        <li>Alcohol consumption and harms</li>
+        <li>Gambling and associated harms</li>
+        <li>Psychological aspects of obesity</li>
+        <li>Addictive behaviour</li>
+        <li>Impact of women&rsquo;s physical conditions on mental health and quality of life (e.g., endometriosis, PCOS/PMOS)</li>
+        <li>Physical activity and sport participation</li>
+        <li>Body image and disordered eating</li>
+        <li>Drugs in sport</li>
+        <li>Intergroup conflict</li>
+        <li>Political extremism and hate</li>
+        <li>Social identity</li>
+        <li>Prejudice and discrimination</li>
+        <li>Attitude measurement and change</li>
+        <li>Embodied cognition</li>
+      </ul>
 
       <footer class="page-end">Made in Melbourne.</footer>
     </section>
@@ -489,7 +499,7 @@ function show(id, scroll){
   if (heading){ heading.setAttribute('tabindex', '-1'); if (scroll) heading.focus({preventScroll:true}); }
   if (scroll) window.scrollTo({top:0, behavior:'auto'});
   document.title = (target === 'welcome' ? '' : target.charAt(0).toUpperCase() + target.slice(1) + ' | ')
-    + "Kerry S. O'Brien | Professor of Behavioural Sciences, Monash University";
+    + "Kerry O'Brien | Professor of Behavioural Sciences, Monash University";
 }
 
 links.forEach(a => {
