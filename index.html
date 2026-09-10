@@ -64,10 +64,11 @@ nav a[aria-current="page"]::before{background:var(--mustard);width:.55rem;height
 .rail-foot{margin-top:auto;padding-top:2rem;font-family:var(--sans);font-size:.75rem;color:var(--ink-soft)}
 .rail-foot p{margin:0 0 .3em}
 
-main{padding:1rem 0 5rem;max-width:44rem}
+main{padding:1rem 0 5rem;max-width:none}
 @media(min-width:60rem){main{padding:3.25rem 0 7rem}}
-.view{display:none}
+.view{display:none;max-width:44rem}
 .view.is-active{display:block}
+#welcome{max-width:56rem}
 .kicker{font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);margin:0 0 1.5rem;
   padding-bottom:.75rem;border-bottom:1px solid var(--sand)}
 h1.display{font-family:var(--serif);font-size:clamp(2.75rem,7.5vw,4.5rem);line-height:1.02;
@@ -145,12 +146,12 @@ h3{font-family:var(--serif);font-size:1.175rem;margin:0 0 .35rem}
 @media(min-width:38rem){.areas{columns:2}}
 .areas li{break-inside:avoid;padding:.32rem 0 .32rem 1rem;position:relative;font-size:1rem;line-height:1.45}
 .welcome-top{display:grid;grid-template-columns:1fr;gap:1.6rem;align-items:start}
-@media(min-width:40rem){.welcome-top{grid-template-columns:minmax(0,1fr) 13rem;gap:2rem}}
+@media(min-width:40rem){.welcome-top{grid-template-columns:minmax(0,1fr) 17rem;gap:2rem}}
+@media(min-width:64rem){.welcome-top{grid-template-columns:minmax(0,1fr) 21rem;gap:2.25rem}}
 #welcome .lede{font-size:1.0625rem;line-height:1.62;max-width:none}
 #welcome .welcome-top .lede{margin-bottom:0}
-.portrait{width:100%;max-width:13rem;height:auto;display:block;border-radius:3px;
+.portrait{width:100%;height:auto;display:block;border-radius:3px;
   border:1px solid var(--sand-rail);box-shadow:0 1px 0 rgba(23,32,29,.05)}
-@media(max-width:39.99rem){.portrait{max-width:10rem}}
 .collabs{list-style:none;margin:1.25rem 0 0;padding:0;display:grid;grid-template-columns:1fr;gap:0}
 @media(min-width:40rem){.collabs{grid-template-columns:1fr 1fr;column-gap:2.5rem}}
 .collabs li{padding:.65rem 0;border-bottom:1px solid var(--sand)}
@@ -209,8 +210,8 @@ footer.page-end{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--s
           <h1 class="display" id="welcome-h">Kerry O&rsquo;Brien</h1>
           <p class="lede">Professor of Behavioural Sciences at Monash University. I&rsquo;m trained in Psychology and Public Health and teach and conduct research in the various areas of health and behavioural sciences. I founded and direct the Behavioural Sciences Research Laboratory at Monash University, and was Associate Dean Research in my Faculty (350+ academics) from 2019 to 2025.</p>
         </div>
-        <img class="portrait" src="portrait-stadium.jpg" srcset="portrait-stadium.jpg 1x, portrait-stadium-2x.jpg 2x"
-             width="560" height="700" alt="Kerry O&rsquo;Brien">
+        <img class="portrait" src="portrait-full.jpg" srcset="portrait-full.jpg 1x, portrait-full-2x.jpg 2x"
+             width="800" height="600" alt="Kerry O&rsquo;Brien">
       </div>
 
       <p>The focus of my lab, PhD students, and post-docs is on conducting rigorous research that provides practical knowledge and solutions for wider society, including industry partners, government, community organisations and the public. We regularly develop new research measures and methodologies. This includes the development and psychometric testing of new survey scales/measures, covert methods, implicit and explicit measures, and novel experimental approaches.</p>
