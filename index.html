@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kerry S. O'Brien | Behavioural Scientist</title>
-<meta name="description" content="Kerry S. O'Brien is a professor of behavioural science working on stigma, addiction, health behaviour change, and psychometrics. Monash University, Melbourne; VinUniversity, Hanoi from 2027.">
+<title>Kerry S. O'Brien | Professor of Behavioural Sciences, Monash University</title>
+<meta name="description" content="Kerry S. O'Brien is Professor of Behavioural Sciences at Monash University. Research on weight stigma, alcohol and gambling marketing, prejudice and extremism, health behaviour, and psychometrics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,106 +22,62 @@
   --sans:'Karla','Helvetica Neue',Arial,sans-serif;
   --rail:19rem;
 }
-
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;
-  background:var(--paper);
-  color:var(--ink);
-  font-family:var(--serif);
-  font-size:1.0625rem;
-  line-height:1.62;
-  font-variant-numeric:oldstyle-nums;
-}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
+  font-size:1.0625rem;line-height:1.62;font-variant-numeric:oldstyle-nums;}
 a{color:var(--teal);text-decoration:none;border-bottom:1px solid rgba(13,91,82,.28)}
 a:hover{border-bottom-color:var(--teal)}
-a:focus-visible,button:focus-visible{outline:2px solid var(--mustard);outline-offset:3px;border-radius:2px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--mustard);outline-offset:3px;border-radius:2px}
 p{margin:0 0 1.15em}
 h1,h2,h3{font-weight:400;margin:0}
-em{font-style:italic}
 
-/* ---------- shell ---------- */
 .shell{display:block;max-width:78rem;margin:0 auto;padding:0 1.5rem}
-@media(min-width:60rem){
-  .shell{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);gap:4.5rem;padding:0 3rem}
-}
+@media(min-width:60rem){.shell{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);gap:4.5rem;padding:0 3rem}}
 
-/* ---------- left rail ---------- */
 .rail{padding:2.25rem 0 1rem}
-@media(min-width:60rem){
-  .rail{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;padding:3.25rem 0 2rem;border-right:1px solid var(--sand);margin-right:-2.25rem;padding-right:2.25rem}
-}
-.mark{
-  display:inline-flex;align-items:baseline;gap:.1rem;
-  font-family:var(--serif);font-size:1.5rem;letter-spacing:.02em;color:var(--teal);
-  border:0;
-}
+@media(min-width:60rem){.rail{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;
+  padding:3.25rem 0 2rem;border-right:1px solid var(--sand);margin-right:-2.25rem;padding-right:2.25rem}}
+.mark{display:inline-flex;align-items:baseline;gap:.1rem;font-family:var(--serif);font-size:1.5rem;
+  letter-spacing:.02em;color:var(--teal);border:0}
 .mark span:last-child{color:var(--mustard)}
-.rail-name{
-  font-family:var(--serif);font-size:1.35rem;line-height:1.25;margin:1.5rem 0 .35rem;
-}
+.rail-name{font-family:var(--serif);font-size:1.35rem;line-height:1.25;margin:1.5rem 0 .35rem}
 .rail-place{font-family:var(--sans);font-size:.8125rem;line-height:1.5;color:var(--ink-soft);margin:0 0 1.75rem}
-
 nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 1.1rem}
 @media(min-width:60rem){nav ul{display:block}}
-nav a{
-  display:block;font-family:var(--sans);font-size:.9375rem;letter-spacing:.01em;
-  color:var(--ink);border:0;padding:.3rem 0;position:relative;
-}
+nav a{display:block;font-family:var(--sans);font-size:.9375rem;color:var(--ink);border:0;padding:.3rem 0;position:relative}
 @media(min-width:60rem){nav a{padding:.34rem 0 .34rem 1.1rem}}
-nav a::before{
-  content:"";position:absolute;left:0;top:50%;width:.42rem;height:1px;background:var(--sand);
-  transform:translateY(-50%);opacity:0;
-}
+nav a::before{content:"";position:absolute;left:0;top:50%;width:.42rem;height:1px;background:var(--sand);transform:translateY(-50%);opacity:0}
 @media(min-width:60rem){nav a::before{opacity:1}}
 nav a:hover{color:var(--teal)}
 nav a[aria-current="page"]{color:var(--teal)}
 nav a[aria-current="page"]::before{background:var(--mustard);width:.7rem;height:2px;opacity:1}
-@media(max-width:59.99rem){
-  nav a[aria-current="page"]{box-shadow:inset 0 -2px 0 var(--mustard)}
-}
+@media(max-width:59.99rem){nav a[aria-current="page"]{box-shadow:inset 0 -2px 0 var(--mustard)}}
 .rail-foot{margin-top:auto;padding-top:2rem;font-family:var(--sans);font-size:.75rem;color:var(--ink-soft)}
 .rail-foot p{margin:0 0 .3em}
 
-/* ---------- main ---------- */
 main{padding:1rem 0 5rem;max-width:44rem}
 @media(min-width:60rem){main{padding:3.25rem 0 7rem}}
 .view{display:none}
 .view.is-active{display:block}
-
-.kicker{
-  font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);
-  margin:0 0 1.5rem;padding-bottom:.75rem;border-bottom:1px solid var(--sand);
-}
-
-h1.display{
-  font-family:var(--serif);
-  font-size:clamp(2.75rem,7.5vw,4.5rem);
-  line-height:1.02;
-  letter-spacing:-.02em;
-  color:var(--teal-deep);
-  margin:0 0 1.25rem;
-}
-h1.page{
-  font-family:var(--serif);font-size:clamp(2rem,4.5vw,2.9rem);line-height:1.1;
-  letter-spacing:-.015em;color:var(--teal-deep);margin:0 0 1rem;
-}
-.lede{font-size:1.1875rem;line-height:1.55;color:var(--ink);max-width:34em}
-
-h2{
-  font-family:var(--serif);font-size:1.5rem;line-height:1.25;color:var(--teal-deep);
-  margin:3rem 0 1rem;padding-top:1rem;border-top:1px solid var(--sand);
-}
+.kicker{font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);margin:0 0 1.5rem;
+  padding-bottom:.75rem;border-bottom:1px solid var(--sand)}
+h1.display{font-family:var(--serif);font-size:clamp(2.75rem,7.5vw,4.5rem);line-height:1.02;
+  letter-spacing:-.02em;color:var(--teal-deep);margin:0 0 1.25rem}
+h1.page{font-family:var(--serif);font-size:clamp(2rem,4.5vw,2.9rem);line-height:1.1;
+  letter-spacing:-.015em;color:var(--teal-deep);margin:0 0 1rem}
+.lede{font-size:1.1875rem;line-height:1.55;max-width:34em}
+.metrics{font-family:var(--sans);font-size:.85rem;line-height:1.55;color:var(--ink-soft);max-width:38em}
+h2{font-family:var(--serif);font-size:1.5rem;line-height:1.25;color:var(--teal-deep);
+  margin:3rem 0 1rem;padding-top:1rem;border-top:1px solid var(--sand)}
 h3{font-family:var(--serif);font-size:1.175rem;margin:0 0 .35rem}
 
-/* ---------- career rule (the one flourish) ---------- */
-.arc{margin:2.5rem 0 3rem;padding:0}
+.arc{margin:2.5rem 0 3rem}
 .arc-line{position:relative;height:1px;background:var(--sand);margin:0 0 .85rem}
 .arc-line i{position:absolute;top:-4px;width:1px;height:9px;background:var(--ink-soft)}
 .arc-line i:nth-child(1){left:0}
 .arc-line i:nth-child(2){left:50%}
-.arc-line i:nth-child(3){left:calc(100% - 1px);background:var(--mustard);height:13px;top:-6px;width:2px}
+.arc-line i:nth-child(3){left:calc(100% - 2px);background:var(--mustard);height:13px;top:-6px;width:2px}
 .arc-stops{display:flex;justify-content:space-between;font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);gap:1rem}
 .arc-stops span:last-child{color:var(--ink);text-align:right}
 .arc-stops span:nth-child(2){text-align:center}
@@ -132,71 +88,60 @@ h3{font-family:var(--serif);font-size:1.175rem;margin:0 0 .35rem}
   .arc-stops span:last-child::before{content:"";position:absolute;left:-1.05rem;top:.75rem;width:.5rem;height:2px;background:var(--mustard)}
 }
 
-/* ---------- record figures ---------- */
-.record{
-  list-style:none;margin:2rem 0 0;padding:1.1rem 0 0;border-top:1px solid var(--sand);
-  display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem 1.5rem;
-}
+.record{list-style:none;margin:2rem 0 0;padding:1.1rem 0 0;border-top:1px solid var(--sand);
+  display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem 1.5rem}
 @media(min-width:38rem){.record{grid-template-columns:repeat(4,1fr)}}
 .record b{display:block;font-family:var(--serif);font-weight:500;font-size:1.5rem;line-height:1.1;color:var(--teal)}
 .record small{font-family:var(--sans);font-size:.75rem;line-height:1.35;color:var(--ink-soft);display:block;margin-top:.3rem}
 
-/* ---------- news ---------- */
 .news{list-style:none;margin:1rem 0 0;padding:0}
 .news li{display:grid;grid-template-columns:3.5rem 1fr;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--sand)}
 .news li:first-child{border-top:1px solid var(--sand)}
 .news time{font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);padding-top:.28rem}
 .news p{margin:0;font-size:1rem;line-height:1.5}
 
-/* ---------- research strands ---------- */
-.strands{margin:1.5rem 0 0}
 .strand{padding:1.35rem 0;border-bottom:1px solid var(--sand)}
-.strand:first-child{border-top:1px solid var(--sand)}
+.strands .strand:first-child{border-top:1px solid var(--sand)}
 .strand p{margin:.15rem 0 0;font-size:1rem;color:var(--ink-soft);line-height:1.55}
 .strand .tools{font-family:var(--sans);font-size:.78rem;color:var(--ink-soft);margin-top:.55rem}
 
-/* ---------- publications ---------- */
-.filters{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.5rem 0 .5rem}
-.filters button{
-  font-family:var(--sans);font-size:.8125rem;color:var(--ink);
-  background:transparent;border:1px solid var(--sand);border-radius:1rem;
-  padding:.3rem .8rem;cursor:pointer;line-height:1.4;
-}
+.rows{list-style:none;margin:1rem 0 0;padding:0}
+.rows li{display:grid;grid-template-columns:1fr;gap:.15rem;padding:.8rem 0;border-bottom:1px solid var(--sand)}
+@media(min-width:38rem){.rows li{grid-template-columns:9.5rem 1fr;gap:1rem}}
+.rows .when{font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);padding-top:.25rem}
+.rows p{margin:0;font-size:1rem;line-height:1.5}
+.rows .sub{font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);margin-top:.25rem;line-height:1.5}
+
+.filters{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.75rem 0 .7rem}
+.filters button{font-family:var(--sans);font-size:.8125rem;color:var(--ink);background:transparent;
+  border:1px solid var(--sand);border-radius:1rem;padding:.3rem .8rem;cursor:pointer;line-height:1.4}
 .filters button:hover{border-color:var(--teal);color:var(--teal)}
 .filters button[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
-.count{font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);margin:.5rem 0 1.5rem}
-.yr{font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);margin:2rem 0 .5rem;padding-bottom:.4rem;border-bottom:1px solid var(--sand)}
-.pub{padding:.95rem 0;border-bottom:1px solid rgba(220,211,195,.55)}
+.search{width:100%;font-family:var(--sans);font-size:.9rem;padding:.5rem .75rem;background:var(--card);
+  border:1px solid var(--sand);border-radius:2px;color:var(--ink)}
+.count{font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);margin:.75rem 0 0}
+.legend{font-family:var(--sans);font-size:.75rem;color:var(--ink-soft);margin:.35rem 0 0}
+.grp{font-family:var(--serif);font-size:1.4rem;color:var(--teal-deep);margin:2.75rem 0 .25rem;
+  padding-top:1rem;border-top:1px solid var(--sand)}
+.yr{font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);margin:1.6rem 0 .5rem;
+  padding-bottom:.4rem;border-bottom:1px solid var(--sand)}
+.pub{padding:.9rem 0;border-bottom:1px solid rgba(220,211,195,.55)}
 .pub h3{font-size:1.0625rem;line-height:1.35;margin:0 0 .25rem;font-weight:500}
 .pub .meta{font-family:var(--sans);font-size:.85rem;line-height:1.5;color:var(--ink-soft);margin:0}
 .pub .meta b{font-weight:700;color:var(--ink)}
 .pub .venue{font-style:italic;font-family:var(--serif);font-size:.95rem;color:var(--ink-soft)}
-.pub .doi{font-family:var(--sans);font-size:.78rem}
-.badge{
-  display:inline-block;font-family:var(--sans);font-size:.7rem;line-height:1;
-  padding:.22rem .42rem;border:1px solid var(--mustard);color:#8a6408;border-radius:2px;margin-left:.4rem;
-  vertical-align:.08em;
-}
+.pub .doi{font-family:var(--sans);font-size:.78rem;overflow-wrap:anywhere}
 
-/* ---------- contact ---------- */
-.dl{margin:1.25rem 0 0;display:grid;grid-template-columns:1fr;gap:0}
+.names{font-family:var(--sans);font-size:.95rem;line-height:1.9;color:var(--ink-soft)}
+
+.dl{margin:1.25rem 0 0;display:grid;grid-template-columns:1fr}
 @media(min-width:38rem){.dl{grid-template-columns:9rem 1fr}}
 .dl dt{font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);padding:.6rem 0 0}
-.dl dd{margin:0;padding:.55rem 0 .6rem;border-bottom:1px solid var(--sand)}
+.dl dd{margin:0;padding:.55rem 0 .6rem;border-bottom:1px solid var(--sand);overflow-wrap:anywhere}
 @media(max-width:37.99rem){.dl dt{padding-top:.9rem;border-top:1px solid var(--sand)}.dl dd{border-bottom:0}}
 
-.note{
-  background:var(--card);border-left:2px solid var(--mustard);
-  padding:.9rem 1.1rem;margin:2rem 0 0;font-family:var(--sans);font-size:.85rem;color:var(--ink-soft);
-}
-.note p{margin:0 0 .5em}
-.note p:last-child{margin:0}
-
-footer.page-end{
-  margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--sand);
-  font-family:var(--sans);font-size:.78rem;color:var(--ink-soft);
-}
-
+footer.page-end{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--sand);
+  font-family:var(--sans);font-size:.78rem;color:var(--ink-soft)}
 @media(prefers-reduced-motion:no-preference){
   .view.is-active{animation:in .32s ease-out both}
   @keyframes in{from{opacity:0}to{opacity:1}}
@@ -209,19 +154,18 @@ footer.page-end{
   <header class="rail">
     <a class="mark" href="#welcome" aria-label="Home"><span>K</span><span>O</span></a>
     <p class="rail-name">Kerry S. O&rsquo;Brien</p>
-    <p class="rail-place">Melbourne, Australia<br>Monash University<br>Hanoi, Vietnam &mdash; from 2027</p>
-
+    <p class="rail-place">Professor of Behavioural Sciences<br>Monash University<br>Melbourne, Australia</p>
     <nav aria-label="Sections">
       <ul>
         <li><a href="#welcome">Welcome</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#publications">Publications</a></li>
+        <li><a href="#funding">Funding</a></li>
         <li><a href="#supervision">Supervision</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="cv.pdf">CV</a></li>
       </ul>
     </nav>
-
     <div class="rail-foot">
       <p>&copy; 2026 Kerry S. O&rsquo;Brien</p>
       <p>Behavioural Sciences Research Laboratory</p>
@@ -230,165 +174,238 @@ footer.page-end{
 
   <main>
 
-    <!-- ============ WELCOME ============ -->
+    <!-- ================= WELCOME ================= -->
     <section id="welcome" class="view is-active" aria-labelledby="welcome-h">
       <p class="kicker">Welcome</p>
       <h1 class="display" id="welcome-h">Kerry S. O&rsquo;Brien</h1>
-      <p class="lede">Behavioural scientist working on stigma, addiction, and the commercial and social forces that shape health &mdash; and on the measurement problems that sit underneath all three.</p>
+      <p class="lede">Professor of Behavioural Sciences at Monash University. I work on stigma, the marketing of alcohol and gambling, prejudice and violent extremism, and the measurement problems that sit underneath all of them.</p>
 
       <div class="arc" aria-label="Career path">
         <div class="arc-line"><i></i><i></i><i></i></div>
         <div class="arc-stops">
-          <span>Otago<br>psychology</span>
-          <span>Monash<br>Behavioural Sciences Research Laboratory</span>
-          <span>VinUniversity, Hanoi<br>Vice Dean, from January 2027</span>
+          <span>Otago<br>PhD, psychology, 2004</span>
+          <span>Wollongong and Manchester<br>2006&ndash;2010</span>
+          <span>Monash<br>2010&ndash;present</span>
         </div>
       </div>
 
       <ul class="record">
-        <li><b>150+</b><small>peer-reviewed publications</small></li>
-        <li><b>53</b><small>h-index</small></li>
-        <li><b>$5.75M</b><small>competitive research funding (AUD)</small></li>
-        <li><b>2015&ndash;23</b><small>Associate Editor, <em>Addiction</em></small></li>
+        <li><b>130</b><small>peer-reviewed journal articles</small></li>
+        <li><b>53</b><small>h-index, Google Scholar</small></li>
+        <li><b>10,160</b><small>citations</small></li>
+        <li><b>$5.7M</b><small>research funding, AUD</small></li>
       </ul>
 
       <h2>What&rsquo;s new</h2>
       <ul class="news">
-        <li><time>2027</time><p>Taking up a Full Professorship and the Vice Deanship at VinUniversity, Hanoi, from January.</p></li>
-        <li><time>2026</time><p>New instrument work: the Universal Social Comparison Scale and the Parent&ndash;Child Emotional Communication Scale, both in validation.</p></li>
-        <li><time>2026</time><p>Cross-cultural validation of the UPACS and DACS appearance-comparison scales, under revision.</p></li>
-        <li><time>2026</time><p>Two comparative papers in preparation on health and psychosocial burden in endometriosis and polycystic ovary syndrome.</p></li>
+        <li><time>2026</time><p>New ARC Linkage Project with Susan Carland, Matteo Vergani and Zarina Vakhitova, tracking Islamophobia and its impacts on Australian Muslims&rsquo; lives.</p></li>
+        <li><time>2026</time><p>Joined the editorial board of <em>BMC Public Health</em>.</p></li>
+        <li><time>2026</time><p>National Industry PhD Program award from the Australian Department of Education.</p></li>
+        <li><time>2025</time><p>Faculty of Arts Dean&rsquo;s Award for Excellence in Research Engagement and Impact.</p></li>
+        <li><time>2025</time><p>Systematic review for the US Department of Homeland Security on interventions to increase trust in government in democratic contexts.</p></li>
       </ul>
 
       <h2>What I study</h2>
-      <p>My work asks how stigma, marketing, and social environment get under the skin &mdash; how people come to be blamed for conditions that are largely produced around them, and what happens to their health when they are. Much of it concerns weight stigma and the framing of obesity, alcohol and its promotion, addiction and the language used to describe it, and the design of interventions that change behaviour without adding to the burden people already carry.</p>
-      <p>Methodologically I am a psychometrician before anything else. A good deal of my time goes into building and validating measures &mdash; appearance comparison, social comparison, family-of-origin influences, parent&ndash;child communication &mdash; and into the experimental and longitudinal designs needed to test whether an effect is real. More recently that has extended to computational and AI-assisted methods for coding and analysing large qualitative and survey datasets.</p>
-      <p>I founded and direct the Behavioural Sciences Research Laboratory at Monash University, and from January 2027 I take up a Full Professorship and the Vice Deanship at VinUniversity in Hanoi.</p>
-
-      <div class="note">
-        <p><b>Draft copy.</b> Everything on this page is a working draft built from your own material &mdash; check the wording, the figures, and the news items before this goes anywhere public. Placeholders are marked in the page source with <code>TODO</code>.</p>
-      </div>
+      <p>My work asks how stigma and commercial marketing shape health, and what follows for policy. Much of it concerns weight stigma: how explanatory models of obesity move public blame and discrimination, how internalised bias changes eating and physical activity, and whether prejudice-reduction interventions actually work. A second, long-running programme examines alcohol and gambling promotion, particularly sponsorship in sport, children&rsquo;s exposure to it on television, and its relationship to hazardous drinking among sportspeople and students.</p>
+      <p>A third strand concerns prejudice and violent extremism, including Islamophobia in Australia, the psychology of support for extremist views in Indonesia, and homophobic behaviour in youth sport. Across all of it I build and validate measures, and I care more than most about whether an effect survives replication.</p>
+      <p>I founded and direct the Behavioural Sciences Research Laboratory at Monash University, and was Associate Dean Research in the Faculty of Arts from 2019 to 2025.</p>
 
       <footer class="page-end">Made in Melbourne.</footer>
     </section>
 
-    <!-- ============ RESEARCH ============ -->
+    <!-- ================= RESEARCH ================= -->
     <section id="research" class="view" aria-labelledby="research-h">
       <p class="kicker">Research</p>
-      <h1 class="page" id="research-h">Five strands</h1>
-      <p class="lede">They overlap more than they look. Stigma is a measurement problem; marketing is a behaviour-change problem; almost everything ends up needing a better scale.</p>
+      <h1 class="page" id="research-h">Six strands</h1>
+      <p class="lede">They overlap more than they look. Stigma is a measurement problem, marketing is a behaviour-change problem, and almost everything ends up needing a better scale.</p>
 
       <div class="strands">
         <article class="strand">
-          <h3>Stigma, blame, and weight</h3>
-          <p>How explanatory models of obesity and addiction shape public attitudes, discrimination, and the treatment people receive. Includes experimental work on how framing a condition &mdash; as a disease, a choice, an addiction &mdash; moves stigma up or down.</p>
-          <p class="tools">Experiments &middot; population surveys &middot; intervention design</p>
+          <h3>Weight stigma and obesity</h3>
+          <p>How explanatory models of obesity move blame, discrimination and treatment; how internalised weight bias relates to eating, distress and quality of life; and whether prejudice-reduction interventions with health professionals hold up under randomised trial. Cross-national work with Rebecca Puhl, Janet Latner and Lenny Vartanian across four countries.</p>
+          <p class="tools">Experiments &middot; randomised trials &middot; multinational surveys</p>
         </article>
 
         <article class="strand">
-          <h3>Alcohol, marketing, and the commercial determinants of health</h3>
-          <p>Exposure to alcohol promotion and sponsorship, its relationship to consumption, and what the evidence implies for regulation rather than for individual restraint.</p>
-          <p class="tools">Cohort and cross-sectional analysis &middot; policy evaluation</p>
+          <h3>Alcohol marketing, sponsorship and policy</h3>
+          <p>Alcohol industry sponsorship and hazardous drinking among sportspeople in New Zealand, the United Kingdom, Australia and Brazil; children&rsquo;s exposure to alcohol advertising in televised sport; and whether counter-advertising can dilute the effects of sponsorship. This work has informed submissions to the Australian Medical Association, Eurocare and national preventive health agencies.</p>
+          <p class="tools">Content audits &middot; field experiments &middot; policy evaluation</p>
         </article>
 
         <article class="strand">
-          <h3>Addiction and health behaviour change</h3>
-          <p>What actually shifts drinking, eating, and activity &mdash; and what the language of addiction does to people who are trying to change.</p>
-          <p class="tools">Trials &middot; longitudinal designs &middot; behavioural theory</p>
+          <h3>Gambling advertising and harm</h3>
+          <p>The extent of children&rsquo;s and young people&rsquo;s exposure to gambling advertising in sport and non-sport television, the relationship between gambling advertising and attitudes and behaviour, and gambling among people experiencing homelessness.</p>
+          <p class="tools">Meta-analysis &middot; media audits &middot; qualitative interviews</p>
         </article>
 
         <article class="strand">
-          <h3>Psychometrics and scale development</h3>
-          <p>Building measures that survive translation and replication. Current instruments include the Universal Social Comparison Scale, the Parent&ndash;Child Emotional Communication Scale, the Family-of-Origin and Family Intentions Scale, and the UPACS/DACS appearance-comparison scales.</p>
-          <p class="tools">EFA/CFA &middot; measurement invariance &middot; IRT &middot; cross-cultural validation</p>
+          <h3>Prejudice, extremism and violence</h3>
+          <p>Islamophobia in Australia and its impacts; when perceived threat translates into anti-Muslim behaviour; existential anxiety and support for violent extremism in Indonesia; homophobic language in youth sport and how to reduce it; and gender-sensitive approaches to preventing violent extremism in Asia and the Pacific.</p>
+          <p class="tools">Cluster randomised trials &middot; national surveys &middot; scale development</p>
         </article>
 
         <article class="strand">
-          <h3>Computational and AI-assisted social science</h3>
-          <p>Using large language models and computational text analysis to code and analyse qualitative and survey data at a scale that manual coding cannot reach &mdash; and testing whether the results hold up against human coders.</p>
-          <p class="tools">LLM-assisted coding &middot; reliability testing &middot; reproducible pipelines</p>
+          <h3>Physical activity, health behaviour and population data</h3>
+          <p>Why people avoid physical activity and sport, and what stigma has to do with it. Also data-linkage work on self-harm and mental health service use in culturally and linguistically diverse communities in Victoria, and dietary and physical activity intervention trials.</p>
+          <p class="tools">Data linkage &middot; longitudinal cohorts &middot; randomised trials</p>
+        </article>
+
+        <article class="strand">
+          <h3>Measurement and psychometrics</h3>
+          <p>Instruments developed or validated with colleagues include the upward and downward physical appearance comparison scales, the Tendency to Avoid Physical Activity and Sport Scale, the Weight Stigma Exposure Inventory and the Hate Behaviours Scale, with translations and invariance testing across Chinese, Italian, Turkish and Malaysian samples. Related work on replication, and on what implicit measures do and do not tell us.</p>
+          <p class="tools">EFA and CFA &middot; measurement invariance &middot; IRT &middot; Bayesian methods</p>
         </article>
       </div>
 
-      <h2>Funding and service</h2>
-      <p>Research supported by competitive grants totalling approximately AUD 5.75 million. <!-- TODO: name the schemes and funders you want listed here (ARC Discovery/Linkage, NHMRC, etc.) --> I served as Associate Editor of <em>Addiction</em> from 2015 to 2023, and review for journals across public health, psychology, and addiction science.</p>
+      <h2>Editorial roles</h2>
+      <ul class="rows">
+        <li><span class="when">2026&ndash;present</span><div><p>Editorial Board, <em>BMC Public Health</em></p></div></li>
+        <li><span class="when">2021&ndash;present</span><div><p>Associate Editor, <em>Obesities</em></p></div></li>
+        <li><span class="when">2019&ndash;present</span><div><p>Associate Editor, <em>International Journal of Environmental Research and Public Health</em></p></div></li>
+        <li><span class="when">2014&ndash;2021</span><div><p>Associate Editor, <em>Addiction</em></p><p class="sub">Stepped down on becoming Associate Dean Research</p></div></li>
+      </ul>
+
+      <h2>Awards</h2>
+      <ul class="rows">
+        <li><span class="when">2025</span><div><p>Faculty of Arts Dean&rsquo;s Award for Excellence in Research Engagement and Impact, Monash University</p></div></li>
+        <li><span class="when">2023</span><div><p>Wiley Top Viewed Article of the Year, <em>British Journal of Social Psychology</em></p></div></li>
+        <li><span class="when">2019</span><div><p>Victorian Health Promotion Foundation Award, Research into Action</p></div></li>
+        <li><span class="when">2018</span><div><p>Dean&rsquo;s Award for Excellence in Research Enterprise, and the Monash ARC Research Mentoring Award</p></div></li>
+        <li><span class="when">2013</span><div><p>Emerging Research Excellence Fellowship, Monash University</p></div></li>
+      </ul>
+
+      <h2>Leadership and service</h2>
+      <ul class="rows">
+        <li><span class="when">2019&ndash;2025</span><div><p>Associate Dean Research, Faculty of Arts, Monash University</p><p class="sub">Research strategy and budget across roughly 250 academic staff. Built and led grant training programmes that produced 23 successful DECRA fellowships at a 33% success rate, against a national average of 17.5%.</p></div></li>
+        <li><span class="when">2016&ndash;2019</span><div><p>Research Director, School of Social Sciences, Monash University</p></div></li>
+        <li><span class="when">2013&ndash;present</span><div><p>Founding Director, Behavioural Sciences Research Laboratory, Monash University</p></div></li>
+        <li><span class="when">2012&ndash;2016</span><div><p>Head of Behavioural Studies, Monash University</p></div></li>
+        <li><span class="when">Current</span><div><p>Scientific Advisor, Eurocare, the European peak body for alcohol policy</p></div></li>
+        <li><span class="when">Past</span><div><p>External advisor, Healthway, Government of Western Australia</p></div></li>
+      </ul>
 
       <footer class="page-end">Made in Melbourne.</footer>
     </section>
 
-    <!-- ============ PUBLICATIONS ============ -->
+    <!-- ================= PUBLICATIONS ================= -->
     <section id="publications" class="view" aria-labelledby="pubs-h">
       <p class="kicker">Publications</p>
-      <h1 class="page" id="pubs-h">Peer-reviewed work</h1>
-      <p class="lede">Around 150 peer-reviewed papers. The full list is on <a href="#contact">Google Scholar</a> and in the <a href="cv.pdf">CV</a>; selected work below, grouped by year.</p>
+      <h1 class="page" id="pubs-h">Publications</h1>
+      <p class="lede">130 peer-reviewed journal articles, eight book chapters, and reports for government and non-government bodies. Filter by topic, or search by author, title or journal.</p>
+      <p class="metrics">Google Scholar: h-index 53, i10-index 115, roughly 10,160 citations. Scopus: h-index 41, roughly 5,375 citations. Of 130 indexed publications, 75% appear in Q1 journals and 26% sit in the top 10% of most-cited articles worldwide. Co-authors in 44 countries.</p>
 
       <div class="filters" role="group" aria-label="Filter publications by topic">
         <button type="button" data-tag="all" aria-pressed="true">All</button>
-        <button type="button" data-tag="stigma" aria-pressed="false">Stigma</button>
-        <button type="button" data-tag="alcohol" aria-pressed="false">Alcohol &amp; marketing</button>
-        <button type="button" data-tag="addiction" aria-pressed="false">Addiction</button>
+        <button type="button" data-tag="stigma" aria-pressed="false">Weight stigma</button>
+        <button type="button" data-tag="alcohol" aria-pressed="false">Alcohol</button>
+        <button type="button" data-tag="gambling" aria-pressed="false">Gambling</button>
+        <button type="button" data-tag="prejudice" aria-pressed="false">Prejudice and extremism</button>
+        <button type="button" data-tag="activity" aria-pressed="false">Physical activity</button>
         <button type="button" data-tag="measurement" aria-pressed="false">Measurement</button>
-        <button type="button" data-tag="health" aria-pressed="false">Health &amp; policy</button>
+        <button type="button" data-tag="health" aria-pressed="false">Health and policy</button>
       </div>
+      <label for="pub-search" style="position:absolute;left:-9999px">Search publications</label>
+      <input id="pub-search" class="search" type="search" placeholder="Search author, title or journal">
       <p class="count" id="pub-count" aria-live="polite"></p>
+      <p class="legend">&dagger; corresponding author when not listed first &nbsp;&middot;&nbsp; * with PhD student &nbsp;&middot;&nbsp; # with post-doctoral researcher</p>
       <div id="pub-list"></div>
-
-      <div class="note">
-        <p><b>Two entries below are real; the rest of your list is not in here yet.</b> The publication list lives in one array at the bottom of this file (<code>const PUBLICATIONS</code>). Paste your BibTeX, ORCID, or Scholar export into that shape &mdash; year, title, authors, venue, doi, tags &mdash; and the page rebuilds itself, filters included.</p>
-      </div>
 
       <footer class="page-end">Made in Melbourne.</footer>
     </section>
 
-    <!-- ============ SUPERVISION ============ -->
+    <!-- ================= FUNDING ================= -->
+    <section id="funding" class="view" aria-labelledby="fund-h">
+      <p class="kicker">Funding</p>
+      <h1 class="page" id="fund-h">Research funding</h1>
+      <p class="lede">Approximately AU$5.7 million in national competitive and industry research income, from the Australian Research Council, the NHMRC, UN Women, state health promotion foundations, and government departments in Australia, the United States and the United Kingdom.</p>
+
+      <ul class="rows">
+        <li><span class="when">2026&ndash;2030</span><div><p>Tracking Islamophobia and its impacts on Australian Muslims&rsquo; lives</p><p class="sub">ARC Linkage Project LP250100022, with industry partner funding &middot; AU$875,437 &middot; Carland, O&rsquo;Brien (conceptual and writing lead), Vergani, Vakhitova</p></div></li>
+        <li><span class="when">2026&ndash;2030</span><div><p>National Industry PhD Program</p><p class="sub">Department of Education, Australian Government &middot; AU$232,289 &middot; Chief Investigator</p></div></li>
+        <li><span class="when">2025&ndash;2026</span><div><p>The effectiveness of interventions to increase trust in government in democratic contexts: a systematic review</p><p class="sub">US Department of Homeland Security &middot; AU$108,736 &middot; Vergani, O&rsquo;Brien, Vakhitova</p></div></li>
+        <li><span class="when">2024&ndash;2025</span><div><p>Islamophobia in Australia Report</p><p class="sub">Australian Islamophobia Register &middot; AU$120,000 &middot; Carland, O&rsquo;Brien, Vergani</p></div></li>
+        <li><span class="when">2020&ndash;2023</span><div><p>Stigma training for general practitioners to increase medication-assisted treatment of opioid dependence</p><p class="sub">Camurus Pty Ltd and others &middot; AU$86,600</p></div></li>
+        <li><span class="when">2020&ndash;2023</span><div><p>Examination of the risk of suicide following injury outcomes</p><p class="sub">Department of Health Victoria, Graduate Research Industry Partnership &middot; AU$70,000 &middot; Chief Investigator</p></div></li>
+        <li><span class="when">2020</span><div><p>&lsquo;No alcohol&rsquo; products: a rapid review</p><p class="sub">Victorian Health Promotion Foundation &middot; AU$23,300 &middot; Lead Chief Investigator</p></div></li>
+        <li><span class="when">2019&ndash;2023</span><div><p>Countering the influence of alcohol sport sponsorship: a media intervention</p><p class="sub">NHMRC Project Grant APP1159262 &middot; AU$412,418 &middot; Dixon, O&rsquo;Brien, Vandenberg and others</p></div></li>
+        <li><span class="when">2019&ndash;2021</span><div><p>Evaluating programs aimed at gender transformative work with men and boys</p><p class="sub">VicHealth &middot; AU$199,993 &middot; Roberts, Elliott, O&rsquo;Brien and others</p></div></li>
+        <li><span class="when">2019&ndash;2020</span><div><p>Research and engagement addressing homophobia in sport</p><p class="sub">You Can Play &middot; AU$27,474 &middot; Lead Chief Investigator</p></div></li>
+        <li><span class="when">2019&ndash;2020</span><div><p>Pride Cup evaluation</p><p class="sub">VicHealth &middot; AU$40,000 &middot; Jeanes, Connor, O&rsquo;Brien, Denison, Lambert</p></div></li>
+        <li><span class="when">2019</span><div><p>Evaluation of the Fast-Tracking Initiative, Magistrates&rsquo; Court of Victoria</p><p class="sub">Court Services Victoria &middot; AU$181,686 &middot; Meyer, McCulloch, Maher, O&rsquo;Brien, Vakhitova, Fitz-Gibbon</p></div></li>
+        <li><span class="when">2018&ndash;2020</span><div><p>Gender equality and violent extremism in North Africa</p><p class="sub">UN Women &middot; AU$845,181 &middot; True, O&rsquo;Brien and others</p></div></li>
+        <li><span class="when">2018&ndash;2020</span><div><p>Extent of, and young people&rsquo;s exposure to, gambling advertising in sport and non-sport television</p><p class="sub">Victorian Responsible Gambling Foundation &middot; AU$191,808 &middot; Lead Chief Investigator</p></div></li>
+        <li><span class="when">2018&ndash;2020</span><div><p>Reducing homophobia and improving mental health in youth sport</p><p class="sub">StandUp Events &middot; AU$82,000 &middot; Chief Investigator</p></div></li>
+        <li><span class="when">2018&ndash;2019</span><div><p>Healthy ageing, veterans and care</p><p class="sub">Defence Health Foundation &middot; AU$40,000 &middot; Warren, Twomey, O&rsquo;Brien</p></div></li>
+        <li><span class="when">2018&ndash;2019</span><div><p>Identifying and understanding men&rsquo;s risky drinking subcultures and settings</p><p class="sub">Victorian Health Promotion Foundation &middot; AU$174,546 &middot; Roberts, O&rsquo;Brien and others</p></div></li>
+        <li><span class="when">2018&ndash;2019</span><div><p>Indonesia: policies for the disengagement and rehabilitation of violent extremists</p><p class="sub">Department of Foreign Affairs and Trade, Australia Awards &middot; AU$301,000 &middot; Lentini, True, O&rsquo;Brien and others</p></div></li>
+        <li><span class="when">2018</span><div><p>Gambling and homelessness</p><p class="sub">Victorian Responsible Gambling Foundation, Early Career Research Support Grant &middot; AU$50,000 &middot; Vandenberg, O&rsquo;Brien, Carter</p></div></li>
+        <li><span class="when">2017&ndash;2018</span><div><p>Children and young people&rsquo;s exposure to alcohol advertising</p><p class="sub">Department of Health, Australian Government &middot; AU$136,561 &middot; Lead Chief Investigator</p></div></li>
+        <li><span class="when">2017&ndash;2018</span><div><p>A gender-sensitive approach to preventing violent extremism in Asia and the Pacific</p><p class="sub">United Nations and Oxfam &middot; AU$377,047 &middot; True, O&rsquo;Brien and others</p></div></li>
+        <li><span class="when">2017&ndash;2018</span><div><p>Gender-sensitive approach to preventing violent extremism in Asia-Pacific</p><p class="sub">UN Women &middot; AU$532,905 &middot; True, Gordon, O&rsquo;Brien, Iqbal, Zech</p></div></li>
+        <li><span class="when">2016&ndash;2018</span><div><p>The stress of obesity stigma</p><p class="sub">ARC Discovery Project DP160100904 &middot; AU$288,000 &middot; Vartanian, Pinkus, O&rsquo;Brien, Smyth, Latner</p></div></li>
+        <li><span class="when">2016&ndash;2017</span><div><p>Creating Change Program evaluation</p><p class="sub">Greater Dandenong City Council &middot; AU$15,000 &middot; O&rsquo;Brien, Vergani</p></div></li>
+        <li><span class="when">2015&ndash;2017</span><div><p>Western Australian adolescents&rsquo; exposure to alcohol advertising</p><p class="sub">Healthway and the Drug and Alcohol Office &middot; AU$144,040 &middot; Jones, Pettigrew, O&rsquo;Brien</p></div></li>
+        <li><span class="when">2012&ndash;2015</span><div><p>Exposure to alcohol advertising in televised sport</p><p class="sub">ARC Linkage Project &middot; AU$166,136 &middot; Lead Chief Investigator</p></div></li>
+        <li><span class="when">2012&ndash;2015</span><div><p>Children and young people&rsquo;s exposure to alcohol advertising in sport</p><p class="sub">Victorian Health Promotion Foundation &middot; AU$112,500 &middot; Chief Investigator</p></div></li>
+        <li><span class="when">2012&ndash;2015</span><div><p>Alcohol advertising and sponsorship in Australia</p><p class="sub">Australian National Preventative Health Agency, NHMRC administered &middot; AU$80,000 &middot; Lead Chief Investigator</p></div></li>
+        <li><span class="when">2009&ndash;2012</span><div><p>Hazardous drinking and sponsorship in UK sport</p><p class="sub">Alcohol Research UK &middot; AU$100,000 &middot; Chief Investigator</p></div></li>
+        <li><span class="when">2008&ndash;2009</span><div><p>Physical activity intervention in people over 55 years</p><p class="sub">Durham and Chester-le-Street Lifestyle Initiative, United Kingdom &middot; AU$80,000 &middot; Co-Chief Investigator</p></div></li>
+        <li><span class="when">2006</span><div><p>Dietary intervention adherence study</p><p class="sub">New Zealand National Heart Foundation &middot; NZ$15,000 &middot; Chief Investigator</p></div></li>
+        <li><span class="when">2005&ndash;2007</span><div><p>Alcohol sponsorship and hazardous drinking</p><p class="sub">Alcohol and Liquor Advisory Council of New Zealand &middot; AU$14,500 &middot; Chief Investigator</p></div></li>
+        <li><span class="when">2005&ndash;2006</span><div><p>Alcohol in sportspeople</p><p class="sub">Maurice and Phyllis Paykel Trust &middot; AU$8,500 &middot; Chief Investigator</p></div></li>
+      </ul>
+
+      <footer class="page-end">Made in Melbourne.</footer>
+    </section>
+
+    <!-- ================= SUPERVISION ================= -->
     <section id="supervision" class="view" aria-labelledby="sup-h">
       <p class="kicker">Supervision</p>
       <h1 class="page" id="sup-h">Working with me</h1>
-      <p class="lede">I supervise doctoral and postdoctoral researchers in behavioural science, public health, and quantitative psychology, in Melbourne now and in Hanoi from 2027.</p>
+      <p class="lede">More than 45 higher-degree completions at doctoral, masters and honours level, across New Zealand, the United Kingdom and Australia.</p>
 
       <h2>What I look for</h2>
-      <p>A defensible design and a real question. I am most useful to students working on stigma, addiction, alcohol and health policy, health behaviour change, or measurement development, and to students who want serious quantitative training &mdash; multilevel and structural equation modelling, psychometric validation, experimental design &mdash; rather than a thesis assembled from convenience data.</p>
-      <p>I also supervise PhDs by publication, and I am happy to talk with candidates who already have papers in progress and need a coherent programme built around them.</p>
+      <p>A defensible design and a real question. I am most useful to students working on stigma, alcohol and gambling policy, prejudice and extremism, health behaviour, or measurement development, and to students who want serious quantitative training rather than a thesis assembled from convenience data. I also supervise PhDs by publication, and I am happy to talk with candidates who already have papers in progress and need a coherent programme built around them.</p>
 
       <h2>Before you write</h2>
-      <p>Send a one-page outline: the question, why it matters, the design you have in mind, and the data you can realistically get. Tell me what scholarship or funding you are applying for and when it closes. A CV and one writing sample help. I read everything that arrives with those four things in it.</p>
+      <p>Send a one-page outline: the question, why it matters, the design you have in mind, and the data you can realistically get. Tell me which scholarship or funding you are applying for and when it closes. A CV and one writing sample help. I read everything that arrives with those four things in it.</p>
 
-      <h2>Current group</h2>
-      <p><!-- TODO: list current students and postdocs here, with their topics, once you have their consent to be named. -->Doctoral candidates and postdoctoral researchers in the Behavioural Sciences Research Laboratory work across stigma, health behaviour, sarcopenia prevention, and psychometrics.</p>
+      <h2>Current doctoral students</h2>
+      <p class="names">Tiansi Chu &nbsp;&middot;&nbsp; Kangqiao Xiang &nbsp;&middot;&nbsp; Paul O&rsquo;Neill &nbsp;&middot;&nbsp; Alina Abramenko &nbsp;&middot;&nbsp; Alireza Zangeneh</p>
+
+      <h2>Completed doctoral supervisions</h2>
+      <p class="names">Dan Myles &nbsp;&middot;&nbsp; Thi Le Pham &nbsp;&middot;&nbsp; Nadia Bevan &nbsp;&middot;&nbsp; Erik Denison &nbsp;&middot;&nbsp; Georgia Rush &nbsp;&middot;&nbsp; Matteo Vergani &nbsp;&middot;&nbsp; Muhammad Iqbal &nbsp;&middot;&nbsp; Victoria Absalom (committee, United Kingdom)</p>
+
+      <h2>Teaching</h2>
+      <p>Twenty years of teaching across four institutions in three countries. Undergraduate teaching has covered introductory and social psychology, health psychology, personality and individual differences, research methods, psychometrics, human factors, behaviour change, public health policy, and the social determinants of health. Postgraduate teaching has covered research methods in the Master of Research and health psychology in the Master of Clinical and Health Psychology. Class sizes have ranged from 17 to 800.</p>
 
       <footer class="page-end">Made in Melbourne.</footer>
     </section>
 
-    <!-- ============ CONTACT ============ -->
+    <!-- ================= CONTACT ================= -->
     <section id="contact" class="view" aria-labelledby="contact-h">
       <p class="kicker">Contact</p>
       <h1 class="page" id="contact-h">Get in touch</h1>
-      <p class="lede">I am glad to hear from researchers, prospective students, journalists, and policy staff working on stigma, alcohol and health policy, addiction, or measurement.</p>
+      <p class="lede">I am glad to hear from researchers, prospective students, journalists and policy staff working on stigma, alcohol and gambling policy, prejudice and extremism, or measurement.</p>
 
       <dl class="dl">
         <dt>Email</dt>
-        <dd><a href="mailto:kerry.obrien@monash.edu">kerry.obrien@monash.edu</a> <!-- TODO: confirm; add a VinUni address from 2027 --></dd>
+        <dd><a href="mailto:kerrykez@gmail.com">kerrykez@gmail.com</a></dd>
 
         <dt>Institution</dt>
-        <dd>Behavioural Sciences Research Laboratory<br>Monash University, Melbourne</dd>
-
-        <dt>From 2027</dt>
-        <dd>College of Arts and Sciences, VinUniversity, Hanoi</dd>
+        <dd>Behavioural Sciences Research Laboratory<br>Monash University, Melbourne, Australia</dd>
 
         <dt>Google Scholar</dt>
-        <dd><a href="#">Add your Scholar URL</a> <!-- TODO --></dd>
+        <dd><a href="https://scholar.google.com.au/citations?user=NUzH-7AAAAAJ&amp;hl=en">Research profile</a></dd>
+
+        <dt>Scopus</dt>
+        <dd><a href="https://www.scopus.com/authid/detail.uri?authorId=57220609253">Author ID 57220609253</a></dd>
 
         <dt>ORCID</dt>
-        <dd><a href="#">Add your ORCID iD</a> <!-- TODO --></dd>
-
-        <dt>Monash profile</dt>
-        <dd><a href="https://research.monash.edu/">research.monash.edu</a> <!-- TODO: link your own profile page --></dd>
-
-        <dt>LinkedIn</dt>
-        <dd><a href="#">Add your LinkedIn URL</a> <!-- TODO --></dd>
+        <dd><a href="https://orcid.org/0000-0003-3145-6038">0000-0003-3145-6038</a></dd>
 
         <dt>Curriculum vitae</dt>
-        <dd><a href="cv.pdf">Download (PDF)</a> <!-- TODO: drop cv.pdf beside this file --></dd>
+        <dd><a href="cv.pdf">Download (PDF)</a></dd>
       </dl>
 
       <footer class="page-end">Made in Melbourne.</footer>
@@ -397,62 +414,53 @@ footer.page-end{
   </main>
 </div>
 
+<script src="publications.js"></script>
 <script>
-/* =========================================================================
-   PUBLICATIONS
-   Edit this array only. Fields: year, title, authors, venue, doi, tags, note.
-   Put **double asterisks** around your own name to bold it.
-   Tags in use: stigma, alcohol, addiction, measurement, health
-   ========================================================================= */
-const PUBLICATIONS = [
-  {
-    year: 2020,
-    title: "The effect of a food addiction explanation model for weight control and obesity on weight stigma",
-    authors: "**O'Brien, K. S.**, Puhl, R. M., Latner, J. D., Lynott, D., Reid, J. D., Vakhitova, Z., Hunter, J. A., Scarf, D., Jeanes, R., Bouguettaya, A., & Carter, A.",
-    venue: "Nutrients, 12(2), 294",
-    doi: "10.3390/nu12020294",
-    tags: ["stigma", "addiction"]
-  },
-  {
-    year: 2019,
-    title: "Review of the fast-tracking initiative in the Magistrates' Courts of Victoria",
-    authors: "Meyer, S., Pfitzner, N., Bartlett, T., Vakhitova, Z., Fitz-Gibbon, K., & **O'Brien, K.**",
-    venue: "Final report and summary report",
-    tags: ["health"],
-    note: "Report"
-  }
-  // ,{ year: 2026, title: "…", authors: "**O'Brien, K. S.**, …", venue: "…", doi: "…", tags: ["measurement"] }
-];
-
-/* ---------- render ---------- */
+/* ---------- publications ---------- */
 const listEl = document.getElementById('pub-list');
 const countEl = document.getElementById('pub-count');
-let activeTag = 'all';
+const searchEl = document.getElementById('pub-search');
+let activeTag = 'all', query = '';
+
+const GROUPS = [['', 'Journal articles'], ['chapter', 'Book chapters'], ['report', 'Government and industry reports']];
 
 function esc(s){ return String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
-function bold(s){ return esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>'); }
+function boldName(s){ return esc(s).replace(/O’Brien, K\. S\.|O’Brien, K\./g, m => '<b>' + m + '</b>'); }
 
 function render(){
-  const items = PUBLICATIONS
-    .filter(p => activeTag === 'all' || (p.tags || []).includes(activeTag))
-    .sort((a, b) => b.year - a.year);
+  const q = query.trim().toLowerCase();
+  const items = PUBLICATIONS.filter(p => {
+    const tagOk = activeTag === 'all' || p[5].split(' ').indexOf(activeTag) !== -1;
+    const qOk = !q || (p[1] + ' ' + p[2] + ' ' + p[3]).toLowerCase().indexOf(q) !== -1;
+    return tagOk && qOk;
+  });
 
   countEl.textContent = items.length + (items.length === 1 ? ' publication' : ' publications');
 
   if (!items.length){
-    listEl.innerHTML = '<p class="pub">Nothing tagged that way yet. Add tags to entries in the PUBLICATIONS array.</p>';
+    listEl.innerHTML = '<p class="pub">Nothing matches that combination.</p>';
     return;
   }
 
-  let html = '', year = null;
-  for (const p of items){
-    if (p.year !== year){ year = p.year; html += '<p class="yr">' + esc(year) + '</p>'; }
-    html += '<article class="pub">';
-    html += '<h3>' + esc(p.title) + (p.note ? '<span class="badge">' + esc(p.note) + '</span>' : '') + '</h3>';
-    html += '<p class="meta">' + bold(p.authors) + '</p>';
-    if (p.venue) html += '<p class="meta"><span class="venue">' + esc(p.venue) + '</span></p>';
-    if (p.doi) html += '<p class="meta doi"><a href="https://doi.org/' + esc(p.doi) + '">doi:' + esc(p.doi) + '</a></p>';
-    html += '</article>';
+  let html = '';
+  for (let g = 0; g < GROUPS.length; g++){
+    const kind = GROUPS[g][0], label = GROUPS[g][1];
+    const inGroup = items.filter(p => p[6] === kind).sort((a, b) => b[0] - a[0]);
+    if (!inGroup.length) continue;
+    html += '<h2 class="grp">' + label + '</h2>';
+    let year = null;
+    for (const p of inGroup){
+      if (p[0] !== year){ year = p[0]; html += '<p class="yr">' + esc(year) + '</p>'; }
+      const raw = p[4];
+      const href = raw ? (raw.indexOf('http') === 0 ? raw : 'https://doi.org/' + raw) : '';
+      const label2 = raw ? (raw.indexOf('http') === 0 ? 'Read the report' : 'doi:' + raw) : '';
+      html += '<article class="pub">'
+           +  '<h3>' + esc(p[2]) + '</h3>'
+           +  '<p class="meta">' + boldName(p[1]) + '</p>'
+           +  (p[3] ? '<p class="meta"><span class="venue">' + esc(p[3]) + '</span></p>' : '')
+           +  (href ? '<p class="meta doi"><a href="' + esc(href) + '">' + esc(label2) + '</a></p>' : '')
+           +  '</article>';
+    }
   }
   listEl.innerHTML = html;
 }
@@ -460,11 +468,11 @@ function render(){
 document.querySelectorAll('.filters button').forEach(btn => {
   btn.addEventListener('click', () => {
     activeTag = btn.dataset.tag;
-    document.querySelectorAll('.filters button').forEach(b =>
-      b.setAttribute('aria-pressed', String(b === btn)));
+    document.querySelectorAll('.filters button').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
     render();
   });
 });
+searchEl.addEventListener('input', () => { query = searchEl.value; render(); });
 render();
 
 /* ---------- section routing ---------- */
@@ -475,14 +483,13 @@ function show(id, scroll){
   const target = views.some(v => v.id === id) ? id : 'welcome';
   views.forEach(v => v.classList.toggle('is-active', v.id === target));
   links.forEach(a => {
-    const isNav = a.matches('nav a');
-    if (isNav) a.setAttribute('aria-current', a.getAttribute('href') === '#' + target ? 'page' : 'false');
+    if (a.matches('nav a')) a.setAttribute('aria-current', a.getAttribute('href') === '#' + target ? 'page' : 'false');
   });
   const heading = document.querySelector('#' + target + ' h1');
   if (heading){ heading.setAttribute('tabindex', '-1'); if (scroll) heading.focus({preventScroll:true}); }
   if (scroll) window.scrollTo({top:0, behavior:'auto'});
-  document.title = (target === 'welcome' ? '' : target[0].toUpperCase() + target.slice(1) + ' | ')
-    + "Kerry S. O'Brien | Behavioural Scientist";
+  document.title = (target === 'welcome' ? '' : target.charAt(0).toUpperCase() + target.slice(1) + ' | ')
+    + "Kerry S. O'Brien | Professor of Behavioural Sciences, Monash University";
 }
 
 links.forEach(a => {
@@ -490,9 +497,8 @@ links.forEach(a => {
     const href = a.getAttribute('href');
     if (!href || href.charAt(0) !== '#') return;
     e.preventDefault();
-    const id = href.slice(1);
     if (history.pushState) history.pushState(null, '', href);
-    show(id, true);
+    show(href.slice(1), true);
   });
 });
 window.addEventListener('popstate', () => show(location.hash.slice(1), false));
